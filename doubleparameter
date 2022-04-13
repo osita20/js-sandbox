@@ -1,0 +1,14 @@
+function sumofodd(start,end){
+   if(typeof start != 'number'||typeof end != 'number'){
+      return 'a wrong input value'
+   };
+   var sum =0;
+  for (a=start; a<=end; a++) {
+     if(a%2===1){
+        sum = sum+a;
+     }
+  };
+  return sum;
+};
+ var getnum = sumofodd(2,7);
+ alert('The result is  '+ getnum);
