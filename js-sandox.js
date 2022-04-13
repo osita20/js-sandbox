@@ -12,4 +12,4 @@ array.reverse();     // to  Sort the array in reverse order
 
 var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
-array2[1][1] 
+array2[1][1][0];
