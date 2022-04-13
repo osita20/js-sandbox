@@ -1,12 +1,14 @@
-function evenNumber(){
-    var sum =0;
-    for(i=1; i<=100;i++){
-    if(i%2===0){
-       sum = sum+i;
- };
- };
-       return sum;
- };
-//document.write(evenNumber())
-//console.log(evenNumber())
-alert("The sum of evenNumber is " + evenNumber())
+function sumofEven(num){
+   if(typeof num !='number'){
+      return 'a wrong input value'
+   }
+   var sum =0;
+  for (a=1; a<=num; a++) {
+     if(a%2===0){
+        sum = sum+a;
+     }
+  };
+  return sum;
+};
+ var getnum = sumofEven('msks');
+ alert('The result is  '+ getnum);
