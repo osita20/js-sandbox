@@ -3,43 +3,51 @@ var id ={
    username:'james',
    password:'Med234',
    status: 'online'
-};
+},
+
 // 2. Create an array which contains the object you have made above and name the array "database".
 
-var database = [{
+var database = [
+   {
    username:'james',
    password:'Med234',
    status: 'online'
+},
+{
+   username:'jona',
+   password:'Mid224',
+   status: 'offline'
+},
+{
+   username:'eze',
+   password:'pat335',
+   status: 'online'
 }
+
 ];
 //3. Accept username, password & status from the prompt and add it to the database array 
 
-var username = prompt('Enter username');
-var password = prompt('Enter password');
-var status = prompt('Enter status');
-var database = [{username:'', password:'', status:''}];
+var database = [username = prompt('Enter username'),  password = prompt('Enter password'), status = prompt('Enter status')];
+alert(database);
 
 //4.Create a function called SignIn that accept two parameter - username, password. This function would check the database array to check for any matching entry. If username & password matches return Both the username and status, if not return "Sorry, wrong username and password".
 
-function SignIn(username, password){
-  var match;
-  
-  var username = prompt('Enter username');
-  var password = prompt('Enter password');
-  var database = [{
-   username:'james',
-   password:'Med234'
-  }];
-  match = database;
-  if(match=== username && password){
-     return match;
-     alert('you are accepted');
-  }
-  else{
-     alert('Sorry, wrong username and password');
-  }
-}
-alert(SignIn(username,password));
+  function SignIn(username,password){
+   var database=[
+      {
+         username : 'james',
+         password : 'Med234'
+      }
+   ]
+     if(username ===database[0].username && password ===database[0].password){
+      return('jame, Med234');
+     }
+     else {
+        return("Sorry, wrong username and password");
+     } 
+   }
+    var request = SignIn(jame, Med234)
+     console.log(request);
 
 //5. Initialise your database array with five object of username, password and status.
 
@@ -74,19 +82,18 @@ var database = [{
 //Update your signIn function to use loop; running through the item in the database and return matching username and password.
 
 function SignIn(username, password){
-   var x;
+   var i,
+   var database=[
+      {
+         username : 'james',
+         password : 'Med234'
+      }
+   ]
+  
 
-   
-   var username = prompt('Enter username');
-   var password = prompt('Enter password');
-
-   var database = [{
-      username:'james',
-      password:'Med234'
-     }];
-
-   for(x in database){
-      console.log(database[x])
+   for(i in database){
+      console.log(database[i])
    };
 };
-console.log(username,password);
+var report = SignIn(james,Med234);
+console.log(report);
