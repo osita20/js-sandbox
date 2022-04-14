@@ -1,14 +1,18 @@
 function sumofodd(start,end){
    if(typeof start != 'number'||typeof end != 'number'){
-      return 'a wrong input value'
+      return 'Invalid input value'
+   };
+    if(start>=end){
+     return 'start must be less than end';
    };
    var sum =0;
   for (a=start; a<=end; a++) {
      if(a%2===1){
         sum = sum+a;
-     }
-  };
+     };  
+    };
+   
   return sum;
 };
- var getnum = sumofodd(2,7);
- alert('The result is  '+ getnum);
+ var getnum = sumofodd('yu',9);
+ alert(getnum);
