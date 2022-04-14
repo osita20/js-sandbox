@@ -1,14 +1,14 @@
-function sumofEven(num){
-   if(typeof num !='number'){
-      return 'a wrong input value'
-   }
+function sumofeven(num){
+   if(typeof num != 'number'){
+      return 'Invalid input value'
+    };
    var sum =0;
-  for (a=1; a<=num; a++) {
+  for (a=0; a<=num; a++) {
      if(a%2===0){
         sum = sum+a;
-     }
-  };
-  return sum;
+     };  
+    };
+   return sum;
 };
- var getnum = sumofEven('msks');
- alert('The result is  '+ getnum);
+ var getnum = sumofeven(8);
+ alert('The result is ' +getnum);
